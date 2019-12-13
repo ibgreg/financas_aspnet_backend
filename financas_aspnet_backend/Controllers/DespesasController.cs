@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using financas_aspnet_backend.Data;
 using financas_aspnet_backend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace financas_aspnet_backend.Controllers
 {
+    [Authorize]
     public class DespesasController : Controller
     {
         private readonly ApplicationDbContext _context;
